@@ -17,6 +17,82 @@
             color: #333;
         }
         
+        /* Navbar styles */
+        .navbar {
+            background-color: #222;
+            padding: 15px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo-container {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .logo {
+            width: 30px;
+            height: 30px;
+            background-color: #d9d483;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: bold;
+        }
+
+        .logo-text {
+            color: white;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .nav-container {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 20px;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+        }
+
+        .auth-buttons {
+            display: flex;
+            gap: 10px;
+            margin-left: 20px;
+        }
+
+        .login-btn {
+            padding: 8px 16px;
+            background-color: transparent;
+            color: white;
+            border: 1px solid #444;
+            border-radius: 4px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+        .signup-btn {
+            padding: 8px 16px;
+            background-color: #e67e22;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+        
         .container {
             max-width: 1200px;
             margin: 0 auto;
@@ -235,10 +311,61 @@
             .footer-section {
                 margin-bottom: 30px;
             }
+
+            .navbar {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            .nav-container {
+                flex-direction: column;
+                width: 100%;
+            }
+
+            .nav-links {
+                width: 100%;
+                justify-content: center;
+                margin-bottom: 10px;
+            }
+
+            .auth-buttons {
+                width: 100%;
+                justify-content: center;
+                margin-left: 0;
+            }
         }
     </style>
 </head>
 <body>
+<!-- Updated navbar with nav links next to login buttons -->
+
+<div class="navbar">
+    <div class="logo-text">CitizenConnect</div>
+</div>
+<div class="navbar">
+    <div class="logo-container">
+        <div> </div>
+        <div> </div>
+        <div> </div>
+        <div class="logo">🏛️</div>
+        <div class="logo-text">CitizenConnect</div>
+    </div>
+    
+    <div class="nav-container">
+        <div class="nav-links">
+            <a href="#">Home</a>
+            <a href="#">Schemes</a>
+            <a href="#">Eligibility</a>
+            <a href="#">AI Assist</a>
+            <a>      </a>
+            <a>      </a>
+            <a>      </a>
+        </div>
+        
+        
+    </div>
+</div>
+
     <div class="container">
         <header>
             <h1>Karnataka Government Schemes</h1>
